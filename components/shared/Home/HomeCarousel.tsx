@@ -1,4 +1,5 @@
 "use client";
+
 import * as React from "react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
@@ -46,7 +47,7 @@ export function HomeCarousel({
                   alt={item.title}
                   fill
                   className='object-cover w-full h-full rounded-md'
-                  property='false'
+                  property='true'
                 />
 
                 <div className='absolute w-1/3  left-16 md:left-32 top-1/2 transform -translate-y-1/2'>
