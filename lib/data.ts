@@ -1,8 +1,44 @@
-/* import b1 from "@/public/images/b1.jpeg";
-import b2 from "@/public/images/b2.jpeg";
-import b3 from "@/public/images/b3.jpeg"; */
+import { Data, IProductInput } from "@/types";
 
-const data = {
+import { toSlug } from "./utils";
+
+const products: IProductInput[] = [
+  {
+    name: "Nike mens Slim-fit  long-Steeve T-shirt",
+    slug: toSlug("Nike mens Slim-fit  long-Steeve T-shirt"),
+    category: "T-shirt",
+    image: ["/images/1.jpeg", "/images/2.jpeg", "/images/3.jpeg"],
+    tags: ["New arrival"],
+    isPublished: true,
+    price: 21.8,
+    listPrice: 0,
+    brand: "Nike",
+    avgRating: 4.71,
+    numReviews: 7,
+
+    ratingDistribution: [
+      { rating: 1, count: 0 },
+      { rating: 2, count: 0 },
+      { rating: 3, count: 0 },
+      { rating: 4, count: 2 },
+      { rating: 5, count: 5 },
+    ],
+
+    numSales: 9,
+    countInStock: 11,
+
+    description:
+      "Nike mens Slim-fit  long-Steeve T-shirt Nike mens Slim-fit  long-Steeve T-shirtNike mens Slim-fit  long-Steeve T-shirt",
+
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    colors: ["white", "red", "black", "blue", "green"],
+    reviews: [],
+  },
+];
+
+const data: Data = {
+  products,
+
   headerMenus: [
     {
       name: "Today's Deal",

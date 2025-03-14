@@ -14,7 +14,7 @@ export const formatNumberWithDecimal = (num: number): string => {
 
 export const toSlug = (text: string): string =>
   text
-    .toLocaleLowerCase()
+    .toLowerCase()
     .replace(/[^\w\s-]+/g, "")
     .replace(/\s+/g, "-")
     .replace(/^-+|-+s/g, "");
